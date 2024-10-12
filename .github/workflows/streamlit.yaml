@@ -1,0 +1,40 @@
+name: Streamlit Workflow
+
+# Trigger workflow on push and pull requests on the main branch
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest  # We are using an Ubuntu runner for GitHub Actions
+
+    steps:
+    # Step 1: Checkout the repository
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    # Step 2: Set up Python
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'  # You can use any version of Python
+
+    # Step 3: Install dependencies
+    - name: Install dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        pip install streamlit ics  # Install any other dependencies here
+
+    # Step 4: Run the Streamlit app using your command (for test run)
+    - name: Run Streamlit App (test run)
+      run: |
+        nohup python3 -m streamlit run ui.py &  # Use your custom command to start the app
+        sleep 10  # Allow time for Streamlit to start
+
+    # Optional: Add deployment step here if needed
