@@ -1,0 +1,409 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:icalendar-ruby
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Manan Arora Calendar (Canvas)
+X-WR-CALDESC:Calendar events for the user\, Manan Arora
+BEGIN:VEVENT
+DTSTAMP:20240917T152400Z
+UID:event-assignment-1835532
+DTSTART;VALUE=DATE;VALUE=DATE:20240914
+CLASS:PUBLIC
+DESCRIPTION:* Review 1\n\n* Project topic\n\n* Project description\n\n* Res
+ earch papers references\n\n* Timeline\n\n* Submission should include:\n\n*
+  Word document containing the information about your project topic\, descr
+ iption\, research papers references\, and timeline\n\n* Presentation in cl
+ ass (the use of a ppt presentation is recommended)
+SEQUENCE:0
+SUMMARY:Project Submission 1 [2248-CSE-6363-004]
+URL;VALUE=URI:https://uta.instructure.com/calendar?include_contexts=course_
+ 193447&month=09&year=2024#assignment_1835532
+X-ALT-DESC;FMTTYPE=text/html:<link rel="stylesheet" href="https://instructu
+ re-uploads.s3.amazonaws.com/account_134300000000000001/attachments/2728693
+ 1/dp_app.css"><ul class="ul1">\n<li class="li1"><strong>Review 1</strong><
+ /li>\n<ul class="ul1">\n<li class="li1">Project topic</li>\n<li class="li1
+ ">Project description</li>\n<li class="li1">Research papers references</li
+ >\n<li class="li1">Timeline</li>\n<li class="li1">Submission should includ
+ e:</li>\n<ul class="ul2">\n<li class="li1">Word document containing the in
+ formation about your project topic\, description\, research papers referen
+ ces\, and timeline</li>\n</ul>\n<li class="li1">Presentation in class (the
+  use of a ppt presentation is recommended)</li>\n</ul>\n</ul><script src="
+ https://instructure-uploads.s3.amazonaws.com/account_134300000000000001/at
+ tachments/27286930/dp_app.js"></script>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240929T205400Z
+UID:event-assignment-1830439
+DTSTART;VALUE=DATE;VALUE=DATE:20240915
+CLASS:PUBLIC
+DESCRIPTION:Matrix Multiplication on Hadoop\n\nInstall Hadoop Instructions:
+ \n\n[Hadoop Installation] (https://mavsuta-my.sharepoint.com/:b:/g/persona
+ l/mdhasanuzzaman_noor_uta_edu/Ec2XQwlOheFElPLBdbdaqbkB1zsf_OPs60Jc23e3dusS
+ Zw?e=Q2UQuW)\n\nInstall Project Instructions:\n\n[Hadoop Matrix Multiplica
+ tionLinks to an external site.] (https://mavsuta-my.sharepoint.com/:w:/g/p
+ ersonal/mdhasanuzzaman_noor_uta_edu/Ebnsn-wyHeVKpWAZ5RW8hgQBqRuXoGnAr9BUJ9
+ sQaATj_w?e=G3Vl86)\n\nProject Folder:\n\n[MatMult.zip] (https://mavsuta-my
+ .sharepoint.com/:u:/g/personal/mdhasanuzzaman_noor_uta_edu/EXKlPuxcurNFh0Q
+ 9uNH4pL0BK9wzZZCm7lEW5aLdDJuT8Q?e=YAocmO)
+SEQUENCE:0
+SUMMARY:Assignment 1 [2248-CSE-6332-002]
+URL;VALUE=URI:https://uta.instructure.com/calendar?include_contexts=course_
+ 193395&month=09&year=2024#assignment_1830439
+X-ALT-DESC;FMTTYPE=text/html:<link rel="stylesheet" href="https://instructu
+ re-uploads.s3.amazonaws.com/account_134300000000000001/attachments/2728693
+ 1/dp_app.css"><p><strong>Matrix Multiplication on Hadoop</strong></p>\n<p>
+ Install Hadoop Instructions:</p>\n<p><a class="external" href="https://mav
+ suta-my.sharepoint.com/:b:/g/personal/mdhasanuzzaman_noor_uta_edu/Ec2XQwlO
+ heFElPLBdbdaqbkB1zsf_OPs60Jc23e3dusSZw?e=Q2UQuW" target="_blank">Hadoop In
+ stallation</a></p>\n<p>Install Project Instructions:</p>\n<p><a class="ext
+ ernal" href="https://mavsuta-my.sharepoint.com/:w:/g/personal/mdhasanuzzam
+ an_noor_uta_edu/Ebnsn-wyHeVKpWAZ5RW8hgQBqRuXoGnAr9BUJ9sQaATj_w?e=G3Vl86" t
+ arget="_blank"><span>Hadoop Matrix Multiplication</span><span class="exter
+ nal_link_icon" role="presentation"><span class="screenreader-only">Links t
+ o an external site.</span></span></a></p>\n<p>Project Folder:</p>\n<p><a c
+ lass="external" href="https://mavsuta-my.sharepoint.com/:u:/g/personal/mdh
+ asanuzzaman_noor_uta_edu/EXKlPuxcurNFh0Q9uNH4pL0BK9wzZZCm7lEW5aLdDJuT8Q?e=
+ YAocmO" target="_blank"><span>MatMult.zip</span></a></p><script src="https
+ ://instructure-uploads.s3.amazonaws.com/account_134300000000000001/attachm
+ ents/27286930/dp_app.js"></script>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240905T182700Z
+UID:event-assignment-1833109
+DTSTART;VALUE=DATE;VALUE=DATE:20240915
+CLASS:PUBLIC
+DESCRIPTION:Problem statement [here] (https://crystal.uta.edu/~gopikrishnav
+ /classes/2024/fall/4308_5360/assmts/assmt1.html).
+SEQUENCE:0
+SUMMARY:Assignment 1 [2248-CSE-5360-004]
+URL;VALUE=URI:https://uta.instructure.com/calendar?include_contexts=course_
+ 192730&month=09&year=2024#assignment_1833109
+X-ALT-DESC;FMTTYPE=text/html:<link rel="stylesheet" href="https://instructu
+ re-uploads.s3.amazonaws.com/account_134300000000000001/attachments/2728693
+ 1/dp_app.css"><p>Problem statement <a class="inline_disabled" href="https:
+ //crystal.uta.edu/~gopikrishnav/classes/2024/fall/4308_5360/assmts/assmt1.
+ html" target="_blank">here</a>.</p><script src="https://instructure-upload
+ s.s3.amazonaws.com/account_134300000000000001/attachments/27286930/dp_app.
+ js"></script>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241005T222300Z
+UID:event-assignment-1831454
+DTSTART:20240920T030000Z
+DTEND:20240920T030000Z
+CLASS:PUBLIC
+DESCRIPTION:There is no coding involved in this assignment. You don't need 
+ to develop any software.\n\nThe description for the term project can be fo
+ und here: [CSE 5325 - Project description - Fall 2024.docx] (https://uta.i
+ nstructure.com/courses/192517/files/33352446?wrap=1)\n\nThe template you w
+ ill work through and submit can be found here: [ Assignment 1 - Project S
+ cope and Feasibility CSE 5325 - Fall 2024.docx] (https://uta.instructure.c
+ om/courses/192517/files/33352442?wrap=1)\n\nA detailed video of Assignment
+  1 expectations can be found here: [Assignment #1 - Explanation Video] (ht
+ tps://drive.google.com/file/d/1Jq8cnbtBSBo6kF0kaJrmtqPkyccrsYME/view)\n\n[
+ ] (https://drive.google.com/file/d/1Jq8cnbtBSBo6kF0kaJrmtqPkyccrsYME/view)
+ When submitting\, please name your file "CSE5325Assign1Fall2024". Canvas w
+ ill automatically add your name to the file.\n\nPlease avoid submitting th
+ e assignment late.
+SEQUENCE:0
+SUMMARY:Assignment #1 - Project Scope and Feasibility [2248-CSE-5325-003]
+URL;VALUE=URI:https://uta.instructure.com/calendar?include_contexts=course_
+ 192517&month=09&year=2024#assignment_1831454
+X-ALT-DESC;FMTTYPE=text/html:<link rel="stylesheet" href="https://instructu
+ re-uploads.s3.amazonaws.com/account_134300000000000001/attachments/2728693
+ 1/dp_app.css"><p><span style="background-color: #fbeeb8\;">There is no cod
+ ing involved in this assignment. You don't need to develop any software.</
+ span></p>\n<p>The <span style="background-color: #fbeeb8\;"><em><strong>de
+ scription for the term project</strong></em></span> can be found here: <a 
+ class="instructure_file_link instructure_scribd_file inline_disabled" titl
+ e="CSE 5325 - Project description - Fall 2024.docx" href="https://uta.inst
+ ructure.com/courses/192517/files/33352446?wrap=1" target="_blank" data-can
+ vas-previewable="false" data-api-endpoint="https://uta.instructure.com/api
+ /v1/courses/192517/files/33352446" data-api-returntype="File">CSE 5325 - P
+ roject description - Fall 2024.docx</a></p>\n<p>The <span style="backgroun
+ d-color: #fbeeb8\;"><em><strong>template </strong></em></span>you will wor
+ k through and submit can be found here:&nbsp\;<a class="instructure_file_l
+ ink instructure_scribd_file inline_disabled" title="Assignment 1 - Project
+  Scope and Feasibility CSE 5325 - Fall 2024.docx" href="https://uta.instru
+ cture.com/courses/192517/files/33352442?wrap=1" target="_blank" data-canva
+ s-previewable="false" data-api-endpoint="https://uta.instructure.com/api/v
+ 1/courses/192517/files/33352442" data-api-returntype="File"> Assignment 1 
+ - Project Scope and Feasibility CSE 5325 - Fall 2024.docx</a></p>\n<p>A <s
+ pan style="color: #000000\; background-color: #fbeeb8\;"><em><strong>detai
+ led video</strong></em></span> of Assignment 1 expectations can be found h
+ ere: <a class="inline_disabled" title="Link" href="https://drive.google.co
+ m/file/d/1Jq8cnbtBSBo6kF0kaJrmtqPkyccrsYME/view" target="_blank">Assignmen
+ t #1 - Explanation Video</a></p>\n<p><a class="inline_disabled" title="Lin
+ k" href="https://drive.google.com/file/d/1Jq8cnbtBSBo6kF0kaJrmtqPkyccrsYME
+ /view" target="_blank"></a>When submitting\, please name your file <em><st
+ rong>"CSE5325Assign1Fall2024"</strong></em>. Canvas will automatically add
+  your name to the file.</p>\n<p><em>Please avoid submitting the assignment
+  late.</em></p><script src="https://instructure-uploads.s3.amazonaws.com/a
+ ccount_134300000000000001/attachments/27286930/dp_app.js"></script>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240912T000700Z
+UID:event-assignment-1835533
+DTSTART;VALUE=DATE;VALUE=DATE:20240928
+CLASS:PUBLIC
+DESCRIPTION:* Review 2\n\n* Data preparation\n\n* Submission should include
+ :\n\n* Word document containing a description of the data preparation proc
+ ess\n\n* Code used for the data preparation task (data cleaning and prepro
+ cessing)\n\n* Presentation in class (the use of a ppt presentation is reco
+ mmended)
+SEQUENCE:0
+SUMMARY:Project Submission 2 [2248-CSE-6363-004]
+URL;VALUE=URI:https://uta.instructure.com/calendar?include_contexts=course_
+ 193447&month=09&year=2024#assignment_1835533
+X-ALT-DESC;FMTTYPE=text/html:<link rel="stylesheet" href="https://instructu
+ re-uploads.s3.amazonaws.com/account_134300000000000001/attachments/2728693
+ 1/dp_app.css"><ul class="ul1">\n<li class="li1"><strong>Review 2</strong><
+ /li>\n<ul class="ul1">\n<li class="li1">Data preparation</li>\n<li class="
+ li1">Submission should include:</li>\n<ul class="ul2">\n<li class="li1">Wo
+ rd document containing a description of the data preparation process</li>\
+ n<li class="li1">Code used for the data preparation task (data cleaning an
+ d preprocessing)</li>\n</ul>\n<li class="li1">Presentation in class (the u
+ se of a ppt presentation is recommended)</li>\n</ul>\n</ul><script src="ht
+ tps://instructure-uploads.s3.amazonaws.com/account_134300000000000001/atta
+ chments/27286930/dp_app.js"></script>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240928T001500Z
+UID:event-assignment-1843012
+DTSTART;VALUE=DATE;VALUE=DATE:20241008
+CLASS:PUBLIC
+DESCRIPTION:Complete the tasks on the following notebook and upload the 'So
+ urce file':\n\n[https://databricks-prod-cloudfront.cloud.databricks.com/pu
+ blic/4027ec902e239c93eaaa8714f173bcfc/3130281265387455/3192682748586319/62
+ 98660574178475/latest.htmlLinks to an external site.] (https://databricks-
+ prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bc
+ fc/3130281265387455/3192682748586319/6298660574178475/latest.html)\n\n \n
+ \nNote:\n\nWe will deduct points for any unnecessary type transformations 
+ (5 points each) and operations (10 points each). We will not accept your w
+ ork if the solution is not written in Scala.
+SEQUENCE:0
+SUMMARY:Assignment 2 [2248-CSE-6332-002]
+URL;VALUE=URI:https://uta.instructure.com/calendar?include_contexts=course_
+ 193395&month=10&year=2024#assignment_1843012
+X-ALT-DESC;FMTTYPE=text/html:<link rel="stylesheet" href="https://instructu
+ re-uploads.s3.amazonaws.com/account_134300000000000001/attachments/2728693
+ 1/dp_app.css"><p>Complete the tasks on the following notebook and upload t
+ he 'Source file':</p>\n<p><a class="external" href="https://databricks-pro
+ d-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/
+ 3130281265387455/3192682748586319/6298660574178475/latest.html" target="_b
+ lank"><span>https://databricks-prod-cloudfront.cloud.databricks.com/public
+ /4027ec902e239c93eaaa8714f173bcfc/3130281265387455/3192682748586319/629866
+ 0574178475/latest.html</span><span class="external_link_icon" role="presen
+ tation"><span class="screenreader-only">Links to an external site.</span><
+ /span></a></p>\n<p>&nbsp\;</p>\n<p>Note:</p>\n<p>We will deduct points for
+  any unnecessary type transformations (5 points each) and operations (10 p
+ oints each). We will not accept your work if the solution is not written i
+ n Scala.</p><script src="https://instructure-uploads.s3.amazonaws.com/acco
+ unt_134300000000000001/attachments/27286930/dp_app.js"></script>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241006T163100Z
+UID:event-assignment-1836078
+DTSTART;VALUE=DATE;VALUE=DATE:20241009
+CLASS:PUBLIC
+DESCRIPTION:[ProgrammingAssignment1_CSE6363_Fall_2024.pdf] (https://uta.ins
+ tructure.com/courses/193447/files/33512402?wrap=1)
+SEQUENCE:0
+SUMMARY:Programming Assignment 1 [2248-CSE-6363-004]
+URL;VALUE=URI:https://uta.instructure.com/calendar?include_contexts=course_
+ 193447&month=10&year=2024#assignment_1836078
+X-ALT-DESC;FMTTYPE=text/html:<link rel="stylesheet" href="https://instructu
+ re-uploads.s3.amazonaws.com/account_134300000000000001/attachments/2728693
+ 1/dp_app.css"><p><a class="instructure_file_link instructure_scribd_file i
+ nline_disabled" title="ProgrammingAssignment1_CSE6363_Fall_2024.pdf" href=
+ "https://uta.instructure.com/courses/193447/files/33512402?wrap=1" target=
+ "_blank" data-canvas-previewable="false" data-api-endpoint="https://uta.in
+ structure.com/api/v1/courses/193447/files/33512402" data-api-returntype="F
+ ile">ProgrammingAssignment1_CSE6363_Fall_2024.pdf</a></p><script src="http
+ s://instructure-uploads.s3.amazonaws.com/account_134300000000000001/attach
+ ments/27286930/dp_app.js"></script>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T070500Z
+UID:event-assignment-1840119
+DTSTART:20241018T030000Z
+DTEND:20241018T030000Z
+CLASS:PUBLIC
+DESCRIPTION:There is no coding involved in this assignment. You don't need 
+ to develop any software.\n\nAssignment Description: [Assignment-2-Microsof
+ t-Project-Plan-CSE-5325-Fall-2024-UPDATED.docx] (https://uta.instructure.c
+ om/courses/192517/files/33994258?wrap=1)\n\nProject Plan Installation Guid
+ e: [CSE5325_PlannerProjectPlan3_Trial_Installation_Guide_AdlyNoore.pdf] (h
+ ttps://uta.instructure.com/courses/192517/files/33994577?wrap=1)\n\nAssign
+ ment Instructional Video: [Rodrigo's Assignment 2 Instructional VideoLink
+ s to an external site.] (https://drive.google.com/file/d/1TqomXb3mRoSPz9L3
+ m7-OwZKqPjdrgwTC/view)[Links to an external site.] (https://www.youtube.co
+ m/watch?v=ym6WHjnynsY&ab_channel=TipsByAnil%C2%A0)[\nLinks to an external 
+ site.] (https://www.youtube.com/watch?v=ym6WHjnynsY&ab_channel=TipsByAnil%
+ C2%A0)\n\nWhen submitting\, please name your file as "CSE5325Assign2Fall20
+ 24". Example would be "CSE5325Assign2Fall2024". Canvas will add your name 
+ to the file and the final name will be\, for example\, "BahramKhalili_CSE5
+ 325Assign2Fall2024".\n\nPlease avoid submitting the assignment late.
+SEQUENCE:0
+SUMMARY:Assignment #2 - Microsoft Project Plan [2248-CSE-5325-003]
+URL;VALUE=URI:https://uta.instructure.com/calendar?include_contexts=course_
+ 192517&month=10&year=2024#assignment_1840119
+X-ALT-DESC;FMTTYPE=text/html:<link rel="stylesheet" href="https://instructu
+ re-uploads.s3.amazonaws.com/account_134300000000000001/attachments/2728693
+ 1/dp_app.css"><p><strong><em><span style="background-color: #fbeeb8\;">The
+ re is no coding involved in this assignment. You don't need to develop any
+  software.</span></em></strong></p>\n<p><em><strong>Assignment Description
+ :</strong></em><span> <a class="instructure_file_link instructure_scribd_f
+ ile inline_disabled" title="Assignment-2-Microsoft-Project-Plan-CSE-5325-F
+ all-2024-2-2.docx" href="https://uta.instructure.com/courses/192517/files/
+ 33994258?wrap=1" target="_blank" data-canvas-previewable="false" data-api-
+ endpoint="https://uta.instructure.com/api/v1/courses/192517/files/33994258
+ " data-api-returntype="File">Assignment-2-Microsoft-Project-Plan-CSE-5325-
+ Fall-2024-UPDATED.docx</a></span></p>\n<p><em><strong>Project Plan Install
+ ation Guide: <a class="instructure_file_link instructure_scribd_file inlin
+ e_disabled" title="CSE5325_PlannerProjectPlan3_Trial_Installation_Guide_Ad
+ lyNoore.pdf" href="https://uta.instructure.com/courses/192517/files/339945
+ 77?wrap=1" target="_blank" data-canvas-previewable="false" data-api-endpoi
+ nt="https://uta.instructure.com/api/v1/courses/192517/files/33994577" data
+ -api-returntype="File">CSE5325_PlannerProjectPlan3_Trial_Installation_Guid
+ e_AdlyNoore.pdf</a></strong></em></p>\n<p><span><em><strong>Assignment Ins
+ tructional Video:</strong></em>&nbsp\;<a class="inline_disabled external" 
+ title="Link" href="https://drive.google.com/file/d/1TqomXb3mRoSPz9L3m7-OwZ
+ KqPjdrgwTC/view" target="_blank">Rodrigo's Assignment 2 Instructional Vide
+ o<span class="external_link_icon" role="presentation"><span class="screenr
+ eader-only">Links to an external site.</span></span></a></span><a class="i
+ nline_disabled external" href="https://www.youtube.com/watch?v=ym6WHjnynsY
+ &amp\;ab_channel=TipsByAnil%C2%A0" target="_blank"><span class="external_l
+ ink_icon" role="presentation"><span class="screenreader-only">Links to an 
+ external site.</span></span></a><a class="inline_disabled external" href="
+ https://www.youtube.com/watch?v=ym6WHjnynsY&amp\;ab_channel=TipsByAnil%C2%
+ A0" target="_blank"><br><span class="external_link_icon" role="presentatio
+ n"><span class="screenreader-only">Links to an external site.</span></span
+ ></a></p>\n<p><strong>When submitting\, please name your file as "CSE5325A
+ ssign2Fall2024". Example would be "CSE5325Assign2Fall2024". Canvas will ad
+ d your name to the file and the final name will be\, for example\, "Bahram
+ Khalili_CSE5325Assign2Fall2024".</strong></p>\n<p><span><strong>Please avo
+ id submitting the assignment late.</strong></span></p><script src="https:/
+ /instructure-uploads.s3.amazonaws.com/account_134300000000000001/attachmen
+ ts/27286930/dp_app.js"></script>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240913T011900Z
+UID:event-assignment-1836079
+DTSTART;VALUE=DATE;VALUE=DATE:20241026
+CLASS:PUBLIC
+DESCRIPTION:[ProgrammingAssignment2_CSE6363_Fall_2024.pdf] (https://uta.ins
+ tructure.com/courses/193447/files/33512496?wrap=1)
+SEQUENCE:0
+SUMMARY:Programming Assignment 2 [2248-CSE-6363-004]
+URL;VALUE=URI:https://uta.instructure.com/calendar?include_contexts=course_
+ 193447&month=10&year=2024#assignment_1836079
+X-ALT-DESC;FMTTYPE=text/html:<link rel="stylesheet" href="https://instructu
+ re-uploads.s3.amazonaws.com/account_134300000000000001/attachments/2728693
+ 1/dp_app.css"><p><a class="instructure_file_link instructure_scribd_file i
+ nline_disabled" title="ProgrammingAssignment2_CSE6363_Fall_2024.pdf" href=
+ "https://uta.instructure.com/courses/193447/files/33512496?wrap=1" target=
+ "_blank" data-canvas-previewable="false" data-api-endpoint="https://uta.in
+ structure.com/api/v1/courses/193447/files/33512496" data-api-returntype="F
+ ile">ProgrammingAssignment2_CSE6363_Fall_2024.pdf</a></p><script src="http
+ s://instructure-uploads.s3.amazonaws.com/account_134300000000000001/attach
+ ments/27286930/dp_app.js"></script>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240912T000900Z
+UID:event-assignment-1835535
+DTSTART;VALUE=DATE;VALUE=DATE:20241026
+CLASS:PUBLIC
+DESCRIPTION:* Review 3\n\n* Implementation\n\n* Submission should include:\
+ n\n* Word document containing a description of the implementation of your 
+ project. You should also describe how your project is different to the ref
+ erences used:\n\n* Did you do the same that was done in the references?\n\
+ n* Any enhancement to the work described in the references?\n\n* The code 
+ of the machine learning component of your project (you don’t have to sub
+ mit the final version of your code at this time but only what you have don
+ e until now)\n\n* Presentation in class (the use of a ppt presentation is 
+ recommended)
+SEQUENCE:0
+SUMMARY:Project Submission 3 [2248-CSE-6363-004]
+URL;VALUE=URI:https://uta.instructure.com/calendar?include_contexts=course_
+ 193447&month=10&year=2024#assignment_1835535
+X-ALT-DESC;FMTTYPE=text/html:<link rel="stylesheet" href="https://instructu
+ re-uploads.s3.amazonaws.com/account_134300000000000001/attachments/2728693
+ 1/dp_app.css"><ul class="ul1">\n<li class="li1"><strong>Review 3</strong><
+ /li>\n<ul class="ul1">\n<li class="li1">Implementation</li>\n<li class="li
+ 1">Submission should include:</li>\n<ul class="ul2">\n<li class="li1">Word
+  document containing a description of the implementation of your project. 
+ You should also describe how your project is different to the references u
+ sed:</li>\n<ul class="ul1">\n<li class="li1">Did you do the same that was 
+ done in the references?</li>\n<li class="li1">Any enhancement to the work 
+ described in the references?</li>\n</ul>\n<li class="li1">The code of the 
+ machine learning component of your project (you don’t have to submit the
+  final version of your code at this time but only what you have done until
+  now)</li>\n</ul>\n<li class="li1">Presentation in class (the use of a ppt
+  presentation is recommended)</li>\n</ul>\n</ul><script src="https://instr
+ ucture-uploads.s3.amazonaws.com/account_134300000000000001/attachments/272
+ 86930/dp_app.js"></script>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240912T001100Z
+UID:event-assignment-1835537
+DTSTART;VALUE=DATE;VALUE=DATE:20241116
+CLASS:PUBLIC
+DESCRIPTION:* Final Presentation\n\n* Completed project\n\n* Submission sho
+ uld include:\n\n* Presentation of your project to the Professor\n\n* Code 
+ for all your project\n\n* Schedule a demo with your TA\n\n* Presentation i
+ n class (the use of a ppt presentation is mandatory)
+SEQUENCE:0
+SUMMARY:Final Project Submission [2248-CSE-6363-004]
+URL;VALUE=URI:https://uta.instructure.com/calendar?include_contexts=course_
+ 193447&month=11&year=2024#assignment_1835537
+X-ALT-DESC;FMTTYPE=text/html:<link rel="stylesheet" href="https://instructu
+ re-uploads.s3.amazonaws.com/account_134300000000000001/attachments/2728693
+ 1/dp_app.css"><ul class="ul1">\n<li class="li1"><strong>Final Presentation
+ </strong></li>\n<ul class="ul1">\n<li class="li1">Completed project</li>\n
+ <li class="li1">Submission should include:</li>\n<ul class="ul2">\n<li cla
+ ss="li1">Presentation of your project to the Professor</li>\n<li class="li
+ 1">Code for all your project</li>\n<li class="li1">Schedule a demo with yo
+ ur TA</li>\n</ul>\n<li class="li1">Presentation in class (the use of a ppt
+  presentation is mandatory)</li>\n</ul>\n</ul><script src="https://instruc
+ ture-uploads.s3.amazonaws.com/account_134300000000000001/attachments/27286
+ 930/dp_app.js"></script>
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240912T001300Z
+UID:event-assignment-1835540
+DTSTART;VALUE=DATE;VALUE=DATE:20241116
+CLASS:PUBLIC
+DESCRIPTION:Project Report\n\nWrite a project report with a length of 4 to 
+ 6 pages following the AAAI (http://www.aaai.org/) conference template. The
+  paper should contain the following sections\n\n* Title\n\n* Abstract\n\n*
+  Introduction\n\n* Dataset description\n\n* Project Description\n\n* 1 Des
+ cription\n\n* 2 Main references used for your project\n\n* 3 Difference in
+  APPROACH/METHOD between your project and the main projects of your refere
+ nces\n\n* 4 Difference in ACCURACY/PERFORMANCE between your project and th
+ e main projects of your references\n\n* Analysis (very important section!)
+ \n\n* 1 What did I do well?\n\n* 2 What could I have done better?\n\n* 3 W
+ hat is left for future work?\n\n* Conclusion
+SEQUENCE:0
+SUMMARY:Paper/Report Submission [2248-CSE-6363-004]
+URL;VALUE=URI:https://uta.instructure.com/calendar?include_contexts=course_
+ 193447&month=11&year=2024#assignment_1835540
+X-ALT-DESC;FMTTYPE=text/html:<link rel="stylesheet" href="https://instructu
+ re-uploads.s3.amazonaws.com/account_134300000000000001/attachments/2728693
+ 1/dp_app.css"><p><strong>Project Report</strong></p>\n<p>Write a project r
+ eport with a length of 4 to 6 pages following the AAAI (<a href="http://ww
+ w.aaai.org/">http://www.aaai.org/</a>) conference template. The paper shou
+ ld contain the following sections</p>\n<ul>\n<li>Title</li>\n<li>Abstract<
+ /li>\n<li>Introduction</li>\n<li>Dataset description</li>\n<li>Project Des
+ cription</li>\n<li>1 Description</li>\n<li>2 Main references used for your
+  project</li>\n<li>3 Difference in APPROACH/METHOD between your project an
+ d the main projects of your references</li>\n<li>4 Difference in ACCURACY/
+ PERFORMANCE between your project and the main projects of your references<
+ /li>\n<li>Analysis (very important section!)</li>\n<li>1 What did I do wel
+ l?</li>\n<li>2 What could I have done better?</li>\n<li>3 What is left for
+  future work?</li>\n<li>Conclusion</li>\n</ul><script src="https://instruc
+ ture-uploads.s3.amazonaws.com/account_134300000000000001/attachments/27286
+ 930/dp_app.js"></script>
+END:VEVENT
+END:VCALENDAR
