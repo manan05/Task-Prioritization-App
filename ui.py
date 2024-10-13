@@ -1,12 +1,59 @@
 import streamlit as st
 from datetime import datetime
 import requests
+import json
+import http.client
+from ics import Calendar
+
+
+# CanvasAPI class for handling API requests
+class CanvasAPI:
+    BASE_URL = "https://uta.instructure.com/api/v1"
+
+    @staticmethod
+    def get_headers(api_token):
+        return {
+            'Authorization': f'Bearer {api_token}',
+        }
+
+    @classmethod
+    def get_courses(cls, api_token):
+        conn = http.client.HTTPSConnection("uta.instructure.com")
+        conn.request("GET", "/api/v1/courses", '', cls.get_headers(api_token))
+        res = conn.getresponse()
+        data = res.read().decode("utf-8")
+        return data  # Return raw JSON string
+
+    @classmethod
+    def extract_calendar_urls(cls, api_token):
+        courses_data = cls.get_courses(api_token)
+
+        if not courses_data:
+            return []
+
+        # Parse the JSON data
+        courses = json.loads(courses_data)
+        calendar_urls = [course['calendar']['ics'] for course in courses if 'calendar' in course]
+        return calendar_urls
+
+    @classmethod
+    def get_calendar_events(cls, api_token):
+        calendar_urls = cls.extract_calendar_urls(api_token)
+        events = []
+
+        for url in calendar_urls:
+            response = requests.get(url)
+            if response.status_code == 200:
+                calendar = Calendar(response.text)
+                events.extend(calendar.events)  # Collect events from each calendar
+            else:
+                print(f"Failed to fetch calendar from {url}: {response.status_code}")
+
+        return events
+
 
 # Dummy credentials for users (simulating a database with a dictionary)
 USER_CREDENTIALS = {'admin': 'password123'}
-
-# Simulate a database for storing user integrations
-USER_INTEGRATIONS = {}
 
 # Function to validate user login
 def login(username, password):
@@ -47,35 +94,23 @@ def logout():
     st.session_state['canvas_events'] = []  # Clear events
     st.write("You have been logged out.")
 
-
-
-# Function to fetch Canvas assignments using the API token and course number
-def fetch_canvas_assignments(api_token, course_number):
-    canvas_url = f"https://uta.instructure.com/api/v1/courses/{course_number}/assignments"
-    headers = {"Authorization": f"Bearer {api_token}"}
-
+# Function to fetch Canvas calendar events using CanvasAPI class
+def fetch_canvas_calendar(api_token):
     try:
-        # Indicate that integration is in progress
         st.session_state['integration_in_progress'] = True
 
-        response = requests.get(canvas_url, headers=headers)
+        events = CanvasAPI.get_calendar_events(api_token)
 
-        if response.status_code == 200 and response.headers.get("Content-Type", "").startswith("application/json"):
-            assignments = response.json()
-
-            if assignments:
-                st.session_state['integration_complete'] = True
-                st.session_state['canvas_events'] = assignments
-                st.success("Canvas integration successful! 🎉")
-                st.session_state['integration_in_progress'] = False
-                st.rerun()  # Re-run the app to show the updated content
-            else:
-                st.warning("No assignments found.")
+        if events:
+            st.session_state['integration_complete'] = True
+            st.session_state['canvas_events'] = events
+            st.success("Canvas calendar integration successful! 🎉")
+            st.session_state['integration_in_progress'] = False
+            st.rerun()  # Re-run the app to show the updated content
         else:
-            st.error("Unexpected content or failed to fetch data.")
-
-    except requests.exceptions.RequestException as e:
-        st.error(f"Error fetching assignments: {e}")
+            st.warning("No calendar events found for the courses.")
+    except Exception as e:
+        st.error(f"Error fetching calendar events: {e}")
     finally:
         st.session_state['integration_in_progress'] = False
 
@@ -120,38 +155,33 @@ def show_login_page():
 def show_main_content():
     st.title('🎯 Task Prioritization App')
 
-    # Display the integration and view selection even when switching views
     st.subheader('📅 Integrate Your Calendar')
 
-    # Integration Options
     integrate_canvas = st.checkbox("Canvas")
     integrate_google = st.checkbox("Google Calendar")
 
     if integrate_canvas:
         canvas_token = st.text_input("Enter Canvas API Access Token", type="password")
-        course_number = st.text_input("Enter Canvas Course Number (e.g., 123)")
+
     if integrate_google:
         st.write("Google Calendar Sign-In (Coming Soon)")
 
     # Integration logic
     if st.button("Integrate"):
         if integrate_canvas:
-            if canvas_token and course_number:
-                fetch_canvas_assignments(canvas_token, course_number)
+            if canvas_token:
+                fetch_canvas_calendar(canvas_token)
             else:
-                st.error("Canvas API token and Course Number are required.")
+                st.error("Canvas API token is required.")
 
-    # Display option to toggle between views only after integration is complete
     if st.session_state['integration_complete']:
         st.session_state['view_option'] = st.radio("Choose a view:", ('List View', 'Calendar View'))
 
-        # Show the selected view
         if st.session_state['view_option'] == 'List View':
             display_task_list()
         else:
             display_integrated_calendars()
 
-    # Logout button
     st.button("Logout", on_click=logout)
 
 # Display integrated assignments in List View
@@ -161,12 +191,10 @@ def display_task_list():
     if tasks:
         st.write("### Task List")
         for event in tasks:
-            if 'due_at' in event:
-                task_name = event['name']
-                task_due_date = event['due_at']
-                st.write(f"**Task:** {task_name}")
-                st.write(f"**Due Date:** {task_due_date}")
-                st.write("---")
+            st.write(f"**Event:** {event.name}")
+            st.write(f"**Start Date:** {event.begin}")
+            st.write(f"**End Date:** {event.end}")
+            st.write("---")
     else:
         st.write("No tasks available to display.")
 
@@ -177,15 +205,12 @@ def display_integrated_calendars():
     # Extract events from Canvas API response
     if 'canvas_events' in st.session_state:
         for event in st.session_state['canvas_events']:
-            if 'due_at' in event:
-                task_name = event['name']
-                task_start = event['due_at']
-                tasks.append({
-                    "title": task_name,
-                    "start": task_start,
-                    "end": task_start,  # Use the same time for start and end if it's an assignment
-                    "color": "red"  # Canvas events are red
-                })
+            tasks.append({
+                "title": event.name,
+                "start": event.begin.isoformat(),
+                "end": event.end.isoformat(),
+                "color": "red"  # Canvas events are red
+            })
 
     if tasks:
         task_events_js = str(tasks).replace("'", '"')
