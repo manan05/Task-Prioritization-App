@@ -1,6 +1,5 @@
-name: Streamlit Workflow
+name: Deploy to GitHub Pages
 
-# Trigger workflow on push and pull requests on the main branch
 on:
   push:
     branches:
@@ -10,31 +9,20 @@ on:
       - main
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest  # We are using an Ubuntu runner for GitHub Actions
+  deploy:
+    runs-on: ubuntu-latest
 
     steps:
-    # Step 1: Checkout the repository
     - name: Checkout code
       uses: actions/checkout@v2
 
-    # Step 2: Set up Python
-    - name: Set up Python
-      uses: actions/setup-python@v2
+    - name: Set up Node.js (optional, if you need it for building)
+      uses: actions/setup-node@v2
       with:
-        python-version: '3.8'  # You can use any version of Python
+        node-version: '14'  # Change as needed
 
-    # Step 3: Install dependencies
-    - name: Install dependencies
-      run: |
-        python3 -m pip install --upgrade pip
-        pip install streamlit ics  # Install any other dependencies here
-
-    # Step 4: Run the Streamlit app using your command (for test run)
-    - name: Run Streamlit App (test run)
-      run: |
-        nohup python3 -m streamlit run ui.py &  # Use your custom command to start the app
-        sleep 10  # Allow time for Streamlit to start
-
-    # Optional: Add deployment step here if needed
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .  # Assuming index.html is in the root
