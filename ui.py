@@ -27,6 +27,50 @@ users_collection = db[COLLECTION_NAME]
 # def hash_password(password):
 #     return hashlib.sha256(password.encode()).hexdigest()
 
+
+class CanvasAPI:
+    BASE_URL = "https://uta.instructure.com/api/v1"
+
+    @staticmethod
+    def get_headers(api_token):
+        return {
+            'Authorization': f'Bearer {api_token}',
+        }
+
+    @classmethod
+    def get_courses(cls, api_token):
+        conn = http.client.HTTPSConnection("uta.instructure.com")
+        conn.request("GET", "/api/v1/courses", '', cls.get_headers(api_token))
+        res = conn.getresponse()
+        data = res.read().decode("utf-8")
+        return data  # Return raw JSON string
+
+    @classmethod
+    def extract_calendar_urls(cls, api_token):
+        courses_data = cls.get_courses(api_token)
+
+        if not courses_data:
+            return []
+
+        # Parse the JSON data
+        courses = json.loads(courses_data)
+        calendar_urls = [course['calendar']['ics'] for course in courses if 'calendar' in course]
+        return calendar_urls
+
+    @classmethod
+    def get_calendar_events(cls, api_token):
+        calendar_urls = cls.extract_calendar_urls(api_token)
+        events = []
+
+        for url in calendar_urls:
+            response = requests.get(url)
+            if response.status_code == 200:
+                calendar = Calendar(response.text)
+                events.extend(calendar.events)  # Collect events from each calendar
+            else:
+                print(f"Failed to fetch calendar from {url}: {response.status_code}")
+
+        return events
 # Function to set the background image
 def set_bg_hack(main_bg):
     main_bg_ext = "jpg"
